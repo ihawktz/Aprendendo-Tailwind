@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+<body>
+    <!-- 1- Containers -->
+    <div class="container bg-blue-500 border-blue-700 border-2 mx-auto p-4 m-4 text-white text-center font-bold">
+        <p>Container</p>
+    </div>
+
+    <!-- Exercicio 01 - Container verde, quando tiver "md" ficar azul -->
+    <div class="container bg-green-600 md:bg-blue-500 mx-auto p-4 m-4 text-white text-center font-bold">
+        <p>Exercicio 01</p>
+    </div>
+
+    <!-- 2- Box sizing -->
+    <!-- Border Box respeita o tamanho dado a ele -->
+    <div class="container bg-emerald-600 mx-auto m-4 text-white text-center font-bold border-box p-10">
+        <p>Border Box</p>
+    </div>
+    <!-- Box Content soma os paddin, margins e ele -->
+    <div class="container bg-orange-500 mx-auto m-4 text-white text-center font-bold box-content p-10">
+        <p>Box Content</p>
+    </div>
+
+    <!-- 3- Controlando display -->
+    <div class="container mx-auto text-center">
+        <span class="inline-block bg-slate-400 p-4 m-4  text-white text-center font-bold">Não são elementos de bloco</span>
+        <span class="inline-block bg-slate-500 p-4 m-4  text-white text-center font-bold">Não são elementos de bloco</span>
+        <span class="block bg-slate-400 p-4 m-4 text-white text-center font-bold">São elementos de bloco</span>
+        <span class="block bg-slate-500 p-4 m-4 text-white text-center font-bold">São elementos de bloco</span>
+        <span class="hidden">Apaga um elemento</span>
+    </div>
+
+    <!-- Exercicio 02 -->
+    <div class="container mx-auto text-center m-4">
+        <div class="inline-block bg-green-600 p-4">
+            <p class="text-white text-center font-bold">Bloco 01</p>
+        </div>
+        <div class="inline-block bg-yellow-500 p-4">
+            <p class="text-white text-center font-bold">Bloco 02</p>
+        </div>
+        <div class="inline-block bg-red-600 p-4">
+            <p class="text-white text-center font-bold">Bloco 03</p>
+        </div>
+    </div>
+
+    <!-- 4- Float e Clear -->
+    <div class="container mx-auto">
+        <div class="bg-blue-600 float-right text-white font-bold p-2">Float Rigth</div>
+        <div class="bg-green-600 float-left text-white font-bold p-2">Float Left</div>
+        <div class="clear-both"></div>
+        <div class="bg-blue-600 float-right text-white font-bold p-2">Float Rigth</div>
+        <div class="bg-green-600 float-left text-white font-bold p-2">Float Left</div>
+        <div class="clear-both"></div>
+    </div>
+
+    <!-- 5- Aplicando Overflow -->
+    <!-- overflow-hidden corta o conteúdo que ultrapassa o tamanho da DIV -->
+    <div class="container overflow-hidden h-16 m-4 bg-blue-500 mx-auto">
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+    </div>
+
+    <!-- overflow-auto se passar o conteúdo da div automaticamente cria um scroll -->
+    <div class="container overflow-auto h-16 m-4 bg-blue-500 mx-auto">
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+    </div>
+
+    <!-- overflow-x-auto passa a ter um scroll somente na horizontal ou seja eixo x -->
+    <div class="container overflow-x-auto h-16 m-4 bg-blue-500 mx-auto">
+        <p class="text-white text-center font-bold">OverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflow</p>
+    </div>
+
+    <!-- overflow-y-auto passa a ter um scroll somente na vertical ou seja eixo y -->
+    <div class="container overflow-y-auto h-16 m-4 bg-blue-500 mx-auto">
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+        <p class="text-white text-center font-bold">Overflow</p>
+    </div>
+
+    <!-- 6- Posiçoes e Direçoes -->
+    <div class="relative container bg-purple-600 p-4 mx-auto text-white m-4">
+        relative
+        <div class="absolute top-0 right-0 p-1 bg-purple-900">
+            Absolute
+        </div>
+    </div>
+
+    <!-- Exercicio 03 -->
+    <div class="container relative h-16 bg-amber-400 mx-auto text-white m-4">
+        <div class="absolute bg-amber-800 bottom-0 right-0 p-1">
+            Absolute
+        </div>
+    </div>
+
+    <!-- 7- Alterando visibilidade -->
+    <!-- utilizando essa classe o objeto desaparece mas, deixando na pagina seus elementos como margin, padding, etc... -->
+    <div class="container bg-blue-500 mx-auto">
+        <p class="invisible p-2">Estou oculto</p>  
+        <p class="visible">Estou Aparecendo</p>
+    </div>
+
+    <!-- Posição do eixo Z (z-index) -->
+    <div class="container relative mx-auto m-4 h-20 bg-blue-200">
+        <div class="bg-blue-400 absolute z-10">Left</div>
+        <div class="bg-blue-500 absolute">Right</div>
+    </div>
+
+    <!-- Exercicio 04 -->
+    <div class="container mx-auto m-4 bg-blue-100 relative h-20">
+        <div class="bg-green-500 text-white font-bold m-4 p-4 absolute z-30">1</div>
+        <div class="bg-yellow-400 text-white font-bold m-6 p-6 absolute z-20">2</div>
+        <div class="bg-red-500 text-white font-bold m-7 p-7 absolute z-10">3</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</html>

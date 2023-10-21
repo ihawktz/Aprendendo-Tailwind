@@ -1,0 +1,9 @@
+1 - npm install -D tailwindcss
+2 - npx tailwindcss init
+3 - add to "tailwind.config.js" - content: ["./src/**/*.{html,js}"],
+4 - criar pasta src, index.html e input.css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+5 - npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+6 - <link href="../dist/output.css" rel="stylesheet">
