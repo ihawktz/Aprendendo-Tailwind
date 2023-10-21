@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn-amarelo{
+        @apply bg-yellow-700 text-white font-bold py-2 px-4 rounded;
+    }
+
+    .btn-amarelo:hover{
+        @apply bg-yellow-400;
+    }
+}
