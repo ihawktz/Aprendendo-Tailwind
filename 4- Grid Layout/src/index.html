@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+<body>
+    <!-- 1- Colunas Grid -->
+    <div class="grid bg-blue-500 grid-cols-3 p-3">
+        <div>Coluna 01</div>
+        <div>Coluna 02</div>
+        <div>Coluna 03</div>
+    </div>
+    <div class="grid bg-blue-600 grid-cols-2 p-3">
+        <div>Coluna 01</div>
+        <div>Coluna 02</div>
+    </div>
+
+    <!-- Exercicio 07 -->
+    <div class="grid grid-cols-3 bg-green-200 mt-4">
+        <div class="bg-green-500">
+            <p class="bg-green-700 text-white text-center">Item - 1</p>
+            <p class="bg-green-700 text-white text-center">Item - 2</p>
+            <p class="bg-green-700 text-white text-center">Item - 3</p>
+        </div>
+        <div class="bg-green-700">
+            <p class="bg-green-900 text-white text-center">Item - 1</p>
+            <p class="bg-green-900 text-white text-center">Item - 2</p>
+            <p class="bg-green-900 text-white text-center">Item - 3</p>
+        </div>
+        <div class="bg-green-500">
+            <p class="bg-green-700 text-white text-center">Item - 1</p>
+            <p class="bg-green-700 text-white text-center">Item - 2</p>
+            <p class="bg-green-700 text-white text-center">Item - 3</p>
+        </div>
+    </div>
+
+    <!-- 2- Largura das Colunas -->
+    <div class="grid grid-cols-6 m-4">
+        <div class="col-span-1 bg-blue-500">
+            <ul>
+                <li>Home</li>
+                <li>Projetos</li>
+                <li>Formação</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+        <div class="col-span-5 bg-slate-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequuntur veritatis enim veniam porro ratione expedita provident, possimus, voluptas error ea vitae autem fuga aspernatur deserunt nihil. Nihil, nostrum iusto.
+            Repudiandae, impedit itaque mollitia libero quae ratione consequatur. Eaque quibusdam commodi aut ipsa nulla nisi rerum sit. Necessitatibus ullam quibusdam consequatur molestias ipsa inventore, tempora est vel iure? Ab, nobis?
+            Ipsa cupiditate, provident quod maxime nostrum voluptate consequuntur possimus? Minima pariatur ipsum labore cupiditate molestiae accusamus illum et vitae aspernatur autem, nostrum hic fuga facere blanditiis dignissimos cumque eveniet? Totam.
+            Vero necessitatibus eveniet, voluptates mollitia assumenda ducimus, iure reprehenderit cum provident accusamus tenetur at! Magnam ut amet libero pariatur deserunt id adipisci facilis, nisi suscipit quisquam odit quam hic asperiores.
+        </div>
+    </div>
+    
+    <div class="grid grid-cols-6 m-4">
+        <div class="col-span-6 bg-green-800">
+            navbar
+        </div>
+        <div class="col-span-1 bg-green-600">
+            Barra lateral esquerda
+        </div>
+        <div class="col-span-4 bg-green-400">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, aperiam itaque. Suscipit reprehenderit voluptates in aliquid. Inventore odio quibusdam quae voluptatum ad repellat culpa eius id, recusandae sit distinctio laboriosam?
+            Nihil commodi fugit ipsam repellendus ab iure sit voluptates nisi molestiae officia, at id maiores ratione adipisci reiciendis harum et sed eum porro consectetur sapiente asperiores ipsa. Sed, quos accusantium.
+            Exercitationem voluptates maiores architecto nisi suscipit reprehenderit unde corrupti magnam qui inventore adipisci, quibusdam animi ipsam quasi ipsa laboriosam nulla nihil quam minima! Accusamus, officia illo corporis cum magnam nostrum?
+            Eos, assumenda tenetur accusamus totam laborum reiciendis sapiente quo sequi aspernatur dolorum, rem nam, ad perferendis velit necessitatibus fugiat itaque vitae consequatur fugit. Similique veritatis animi aliquam cum! Voluptatum, molestiae.
+        </div>
+        <div class="col-span-1 bg-green-600">
+            Barra lateral direita
+        </div>
+        <div class="col-span-6 bg-green-800">
+            footer
+        </div>
+    </div>
+
+    <!-- Exercicio 08 -->
+    <div class="grid grid-cols-4 m-4">
+        <div class="col-span-4 bg-blue-500 p-2">
+            <p>Navbar</p>
+        </div>
+        <div class="col-span-1 bg-blue-400 p-2">
+            <ul>
+                <li>Links</li>
+                <li>Links</li>
+                <li>Links</li>
+            </ul>
+        </div>
+        <div class="col-span-3 bg-blue-300 p-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis accusantium esse sunt deserunt iusto praesentium, quidem sapiente deleniti recusandae. Modi impedit voluptatum vero perferendis eligendi. Quia repudiandae at doloribus similique?
+            Vero, quidem sunt tenetur reiciendis aliquam ex nemo iusto ratione id esse neque dolore expedita pariatur ut autem alias numquam sed nulla dicta. Quia, repellendus ducimus mollitia placeat nobis distinctio.
+            Assumenda quisquam minus perspiciatis voluptatibus laudantium. Et voluptas autem sed dicta dolorem impedit iure, enim rem molestiae quidem. Facere repellendus hic pariatur eaque id eos voluptas modi quis fugit? Alias?
+        </div>
+    </div>
+
+    <!-- 3- Grid Linear -->
+    <div class="grid grid-rows-2 grid-flow-col m-4">
+        <div class="bg-blue-500">1</div>
+        <div class="bg-blue-600">2</div>
+        <div class="bg-blue-500">3</div>
+        <div class="bg-blue-600">4</div>
+        <div class="bg-blue-500">5</div>
+        <div class="bg-blue-600">6</div>
+        <div class="bg-blue-500">7</div>
+        <div class="bg-blue-600">8</div>
+    </div>
+
+    <!-- 4- Espaçamento entre os itens  -->
+    <div class="grid grid-cols-3 m-4 gap-5">
+        <div class="bg-purple-500">1</div>
+        <div class="bg-purple-600">2</div>
+        <div class="bg-purple-500">3</div>
+        <div class="bg-purple-600">4</div>
+        <div class="bg-purple-500">5</div>
+        <div class="bg-purple-600">6</div>
+        <div class="bg-purple-500">7</div>
+        <div class="bg-purple-600">8</div>
+        <div class="bg-purple-500">9</div>
+    </div>
+
+    <!-- Exercicio 09 -->
+    <div class="grid grid-cols-2 gap-6 m-4">
+        <div class="bg-blue-600 p-3">1</div>
+        <div class="bg-blue-600 p-3">2</div>
+        <div class="bg-blue-600 p-3">3</div>
+        <div class="bg-blue-600 p-3">4</div>
+    </div>
+</body>
+</html>
